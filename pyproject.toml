@@ -1,0 +1,20 @@
+[project]
+name = "mkdocs_material_extended_social_plugin"
+version = "0.0.0"
+description = "A plugin for MkDocs that extends social plugin of Material for MkDocs"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["mkdocs-material[imaging]>=9.5.45"]
+license = { file = "LICENSE" }
+
+[dependency-groups]
+dev = [
+    "autopep8>=2.3.1",
+    "flake8>=7.1.1",
+    "mypy>=1.13.0",
+    "pytest>=8.3.3",
+    "pytest-cov>=6.0.0",
+]
+
+[project.entry-points."mkdocs.plugins"]
+extendedsocial = "mkdocs_material_extended_social_plugin.__init__:ExtendedSocialPlugin"
