@@ -4,9 +4,16 @@
 
 This plugin extends the functionality of the `social` plugin in `mkdocs-material`, allowing for greater customization and support for additional social media platforms. Perfect for creating visually appealing and highly configurable cards for your documentation site.
 
+You can easily change the font size, the maximum number of lines, the line space, and the position of title, description, and site name in the card. Moreover, you can easily insert a background image in the card.
+
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/hmasdev/mkdocs-material-extended-social-plugin?sort=semver)
 ![GitHub Liecense](https://img.shields.io/github/license/hmasdev/mkdocs-material-extended-social-plugin)
 ![GitHub last commit](https://img.shields.io/github/last-commit/hmasdev/mkdocs-material-extended-social-plugin)
+
+||With `social`| With `extendedsocial`|
+|---|---|---|
+|social card|![social card example with `social`](./docs/longtitle_with_social.png)|![social card example with `extendedsocial`](./docs/longtitle_with_extended_social.png)|
+|mkdocs.yaml|<pre><code>site_name: My Docs with social plugin<br><br>theme:<br>  name: material<br><br>plugins:<br>  - social<br></code></pre>|<pre><code>site_name: My Docs with extendedsocial plugin<br><br>theme:<br>  name: material<br><br>plugins:<br>  - extendedsocial:<br>      extra_cards_options:<br>        background_image: docs/cardbackground.png<br>        background_image_resize_strategy: keep_aspect_ratio<br>        site_name_font_size: 52<br>        title_font_size: 32<br>        description_font_size: 28<br>        title_line_max: 5<br></code></pre>|
 
 ## Requirements
 
